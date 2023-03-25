@@ -1,6 +1,21 @@
 # Scripts written for and used in the paper "Nano-Strainer: a workflow for identification of single-copy nuclear loci for plant systematic studies, using target capture kits and Oxford Nanopore long reads" published by Agnes Scheunert et al. in "Ecology and Evolution"
 
-## All scripts written by Ulrich Lautenschlager or Tankred Ott
+_All scripts written by Ulrich Lautenschlager or Tankred Ott_
+
+## Table of Contents
+
+- [General information](#general-information)
+- [1_EXTRACT_FILES.SH](#1_extract_filessh)
+- [2_INDEX1_STANDARDIZED_MEAN_READS_PER_CLUSTER.R](#2-index1_standardized_mean_reads_per_clusterr)
+- [3_INDEX2_KBS.R](#3_index2_kbsr)
+- [4_INDEX3ENTROPY_INDEX4SILHOUETTE.R](#4_index3entropy_index4silhouetter)
+- [5_BEST_LOCI.R](#5_best_locir)
+- [6_CALCULATE_DENDROGRAMS.R](#6_calculate_dendrogramsr)
+- [7_VSEARCH_TESTCLUSTERINGTHRESHOLDS.PY](#7_vsearch_testclusteringthresholdspy)
+- [8_FILTER_ENTIRELYUNMAPPEDREADS.SH](#8_filter_entirelyunmappedreadssh)
+- [9_EXTRACT_MAPPING_STATISTICS.SH](#9_extract_mapping_statisticssh)
+- [10_EXTRACT_CANU_STATISTICS.SH](#10_extract_canu_statisticssh)
+- [11_SEQUENCENAME_FROM_FILENAME.SH](#11_sequencename_from_filenamesh)
 
 ## General information
 
@@ -133,7 +148,7 @@ Folder containing FASTA files of candidate loci (here named "candidate_loci")
 
 See script; the output TRE files will be generated in the same folder
 
-#### Dependencies
+### Dependencies
 
 ape, kmer and tools libraries in R
 
@@ -249,9 +264,9 @@ see script
 
 None.
 
-### 12_OUTERJOIN.R
+## 12_OUTERJOIN.R
 
-## Purpose
+### Purpose
 
 Merge two CSV files containing locus summary statistics of several samples into one, by performing an "outer join"
 
