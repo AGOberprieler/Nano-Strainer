@@ -64,7 +64,9 @@ see script; the output can then be added to the locus summary statistics file
 
 ## 3_INDEX2_KBS.R
 
-### Purpose: calculation of index 2, the k-mer based similarity index
+### Purpose
+
+Calculation of index 2, the k-mer based similarity index. See file "workflow_commands.docx" or Supplementary Materials at Dryad.
 
 ### Chapter
 
@@ -94,7 +96,7 @@ Calculation of index 3 (entropy) and index 4 (silhouette index)
 
 ### Input
 
-same as for script "3_INDEX2_KBS.R"
+Same as for script "3_INDEX2_KBS.R"
 
 ### Execute
 
@@ -104,9 +106,12 @@ For single execution with only one FASTA file:
 ./4_index3entropy_index4silhouette.r -k [desired k-mer length, default=8] -l [desired linkage criterion, default=single] -o [output_prefix] [input_file]
 ```
 
-Parameters can be set upon calling the script; for recommendations on choosing k-mer lengths and linkage criteria, please refer to the main text of the paper and the detailed methods document "1_detailed_methods.docx" at Dryad. The script will also produce output on the screen; the final results can then be added to the locus summary statistics file
+Parameters can be set upon calling the script; for recommendations on choosing k-mer lengths and linkage criteria, please refer to the main text of the paper and the detailed methods document "1_detailed_methods.docx" at Dryad. The script will also produce output on the screen; the final results can then be added to the locus summary statistics file.
 See "4_workflow_commands.docx" for usage within a FOR loop
-Dependencies: ape, kmer, argparse and cluster libraries in R
+
+### Dependencies
+
+ape, kmer, argparse and cluster libraries in R
 
 ## 5_BEST_LOCI.R
 
@@ -178,7 +183,10 @@ _Note_: CTs that should be tested must be given one after the other, separated b
 For use in multi mode see script; the script will generate one folder for each input file and one subfolder for each tested clustering threshold. Clustering is performed with the following settings (which can be modified if desired by altering the VSEARCH_CALL line in the script): cluster identifier information added to the output files; clusters sorted by decreasing abundance; no masking performed; checking the plus and minus strand during comparison of sequences with the cluster seed.
 
 The output (for each CT) will contain: files for all generated clusters with sequential numbering, two files containing cluster centroids and cluster consensus sequences, one file containing the aligned sequences of each cluster, clustering results each in uclust-like and BLAST "outfmt 6" format, and a LOG file. Results (cluster files) can then manually be examined for sequences separated below a given CT
-Dependencies: Python
+
+### Dependencies
+
+Python
 
 ## 8_FILTER_ENTIRELYUNMAPPEDREADS.SH
 
@@ -202,7 +210,7 @@ See script; the output, per individual, is one TXT file listing unmapped read ID
 
 ### Purpose
 
-Ssee "4_workflow_commands.docx"; from a collection of mapping statistics obtained by executing SAMTOOLS FLAGSTAT on several mapping files (SAM), extract and summarize the information contained in the single files
+See "4_workflow_commands.docx"; from a collection of mapping statistics obtained by executing SAMTOOLS FLAGSTAT on several mapping files (SAM), extract and summarize the information contained in the single files
 
 ### Chapter
 
@@ -240,7 +248,10 @@ See script; the output is one tab-delimited CSV file per marker, each containing
 
 This information can be used to calculate further important statistics (see Supplementary Materials of the study as available at Dryad, file "8_mapping_and_canu_stats.xlsx")
 The script extracts this information from the .seqStore.err, .report, .unassembled.fasta and .contigs.fasta files in each CANU output folder
-Dependencies: the script expects file names and folder structures as in CANU v. 2.1 outputs.
+
+### Dependencies
+
+The script expects file names and folder structures as in CANU v. 2.1 outputs.
 
 ## 11_SEQUENCENAME_FROM_FILENAME.SH
 
