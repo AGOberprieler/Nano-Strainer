@@ -6,7 +6,7 @@ _All scripts written by Ulrich Lautenschlager or Tankred Ott_
 
 - [General information](#general-information)
 - [1_EXTRACT_FILES.SH](#1_extract_filessh)
-- [2_INDEX1_STANDARDIZED_MEAN_READS_PER_CLUSTER.R](#2-index1_standardized_mean_reads_per_clusterr)
+- [2_INDEX1_STANDARDIZED_MEAN_READS_PER_CLUSTER.R](#2_index1_standardized_mean_reads_per_clusterr)
 - [3_INDEX2_KBS.R](#3_index2_kbsr)
 - [4_INDEX3ENTROPY_INDEX4SILHOUETTE.R](#4_index3entropy_index4silhouetter)
 - [5_BEST_LOCI.R](#5_best_locir)
